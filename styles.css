@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Open Sans");
+}
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.page {
+  max-width: 1366px;
+  max-height: 1828px;
+  margin:auto;
+}
+
+.header-line {
+  padding-top: 22.35px;
+  padding-left: 113px;
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  color: rgb(5, 172, 223);
+  font-weight: bold;
+  font-size: 24.58px;
+  letter-spacing: 6px;
+}
+.logo-text {
+  display: table-cell;
+  font-size: 11px;
+  padding-left: 113px;
+}
+.nav {
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 50px;
+  margin-left: 550px;
+  word-spacing: 40px;
+  margin-top: -40px;
+}
+.nav-item1 {
+  word-spacing: 2px;
+  text-decoration: none;
+  color: black;
+}
+.nav-item1:hover {
+  text-decoration: underline;
+}
+.nav-item2 {
+  text-decoration: none;
+  color: black;
+}
+.nav-item2:hover {
+  text-decoration: underline;
+}
+.nav ul {
+  list-style: none;
+}
+.nav > ul > li {
+  float: left;
+  width: 120px;
+  position: relative;
+}
+.nav li a{
+	display: block;
+	background: white;
+	/* border: 1px solid #060A13; */
+	color: #060A13;
+	text-align: center;
+	text-decoration: none;
+}
+.nav li .second{
+  padding: 1px;
+	display: none;
+	position: absolute;
+	top: 100%;
+  padding-top: 10px;
+}
+.nav li:hover .second{
+	display: block;
+}
+.nav li li{
+  word-spacing: 1px;
+	width: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  background: white;
+}
+.nav li:hover{
+  text-decoration: underline;
+}
+
+/* .nav-item2:hover {
+  display: block;
+  position: absolute;
+  text-decoration: underline;
+} */
+.nav-item3 {
+  text-decoration: none;
+  color: white;
+  padding: 1px 14px 5px;
+  text-rendering: auto;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: rgb(0, 155, 245);
+}
+
+.nav-item3:hover { 
+  color: aqua;
+  background-color: white;
+  border: 2px solid blue;
+}
+.nav-item4 {
+  text-decoration: none;
+  word-spacing: 2px;
+  font-weight: bold;
+  color: black;
+}
+.nav-item4:hover {
+  text-decoration: underline;
+}
+.Slider {
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+.text-info1 {
+  display: flex;
+  justify-content: center;
+  font-size: px;
+  font-family: math;
+  font-size: 36px;
+  max-width: 719px;
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+.text-info2 {
+  padding: 46px;
+  display: flex;
+  justify-content: center;
+  font-family: math;
+  font-size: 18px;
+  max-width: 859px;
+  width: 1141px;
+  margin: auto;
+  text-align: justify;
+}
+.production {
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  
+}
+.tab-prod {
+  letter-spacing: 10px;
+  justify-content: center;
+  font-size: px;
+  font-family: math;
+  font-size: 36px;
+  max-width: 1140px;
+  max-height: 643px ;
+  margin: auto;
+  text-align: center;
+  display: inline;
+}
+.zakaz {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+.tab-preim {
+  letter-spacing: 150px;
+  margin: auto;
+  display: table;
+  
+  
+}
+/* .nav ul ul {   Выпадающее меню!
+  color: black;
+  display: none; 
+  position: absolute;
+  top: 100%;
+}
+.nav ul li:hover >ul {
+  display: inherit;
+}
+.nav ul ul li {
+  min-width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+} */
+/* .test {
+  display: flex;
+  justify-content: center;
+  font-size: px;
+  font-family: math;
+  font-size: 36px;
+  max-width: 719px;
+  width: 800px;
+  margin: auto;
+  text-align: center;
+} */
