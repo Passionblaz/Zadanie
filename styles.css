@@ -137,7 +137,29 @@ body {
 .nav-item4:hover {
   text-decoration: underline;
 }
-
+.h {
+  position: absolute;
+  z-index: 1999;
+  display: flex;
+  padding-left: 220px;
+  padding-top: 100px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.t {
+  position: absolute;
+    z-index: 999;
+    display: flex;
+    padding-left: 220px;
+    padding-top: 75px;
+    max-width: 591px;
+    border: 1px black;
+    margin-top: 74px;
+    background-color: #fff;
+    opacity: 0.7;
+    font-size: 20px;
+    height: 110px;
+}
 .slider {
   /*Slider preset*/
   /* height: 540px; */
