@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!-- <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+  </script> -->
     <meta charset="UTF-8" />
     <title>KOMPOZIT</title>
     <link rel="stylesheet" href="styles.css" />
@@ -10,6 +18,48 @@
   </head>
 
   <body>
+    <style>
+      body {
+         margin: 0;
+      }
+      .container {
+         display: flex;
+         flex-wrap: wrap;
+      }
+      .aside, .main {
+         width: 100%;
+         min-height: 1px;
+      }
+      @media (min-width: 992px) {
+       .aside {
+         flex: 0 0 33.333333%;
+         max-width: 33.333333%;
+         order: 1;
+       }
+       .main {
+         flex: 0 0 66.666667%;
+         max-width: 66.666667%;
+         order: 2;
+       }
+      }
+      @media (min-width: 1366px) {
+       .aside {
+         flex: 0 0 25%;
+         max-width: 25%;
+       }
+       .main {
+         flex: 0 0 75%;
+         max-width: 75%;
+       }
+      }
+      </style>
+    
+      <div class="container">
+         <main class="main">
+         </main>
+         <aside class="aside">
+         </aside>
+      </div>
   <div class="page">
     <div class="header">
       <div class="Container">
@@ -27,21 +77,48 @@
             <li><a class="nav-item1" href="@">О компании</a></li>
           <li><a class="nav-item2" href="@">Продукция</a>
             <ul class="second">
-              <li><a href="@">Самозмазывающиеся подшипники скольжения</a></li>
-              <li><a href="@">Магнитные материалы</a></li>
-              <li><a href="@">Спеченные металлические пористые фильтрэлементы</a></li>
-              <li><a href="@">Изделия из конструкционных материалов</a></li>
-              <li><a href="@">Инструментальные стали</a></li>
+              <li><a href="#top">Самозмазывающиеся подшипники скольжения</a></li>
+              <li><a href="#top">Магнитные материалы</a></li>
+              <li><a href="#top">Спеченные металлические пористые фильтрэлементы</a></li>
+              <li><a href="#top">Изделия из конструкционных материалов</a></li>
+              <li><a href="#top">Инструментальные стали</a></li>
             </ul>
           </li>
             <a class="nav-item3" href="@">Контакты</a>
             <a class="nav-item4" href="@">8(800)111-11-11</a>
           </ul>
           </div>
-        </div>
-        <div class="Slider">
-          <img src="./images/Slider.png" width="2000px" height="465px" alt />
-        </div>
+    </div>
+         <div class="slider"> 
+          <div class="slider-text">
+            <div class="h"> В СТРЕМЛЕНИИ К СОВЕРШЕНСТВУ</div>
+            <div class="t">Многолетний опыт исследований и производства, позволяют нам удовлетворить любые запросы заказчика и внести свой вклад в успех наших клиентов.</div>
+          </div>
+    <ul>
+        <li><a href="#"><img src="/images/Slider1.png" width="2000px" height="465px" alt=""></a></li>
+        <li><a href="#"><img src="/images/Slider2.png" width="2000px" height="465px" alt=""></a></li>
+        <li><a href="#"><img src="/images/Slider3.png" width="2000px" height="465px" alt=""></a></li>
+        <li><a href="#"><img src="/images/Slider4.png" width="2000px" height="465px" alt=""></a></li>
+        <li><a href="#"><img src="/images/Slider5.png" width="2000px" height="465px" alt=""></a></li>
+        ...
+    </ul>
+         </div>
+<script src="/jquery.min.js"></script>
+<script src="/bxslider/dist/jquery.bxslider.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('.slider ul').bxSlider({
+        pager: true,
+        controls: true,
+        auto: true,
+        mode: 'fade',
+        pause: 10000,
+        minSlides: 1,
+        maxSlides: 1,        
+    });
+});
+</script>
     <div class="tbody">
       <div class="text-info1">
         Разработка наукоемких технологий в области 
@@ -51,49 +128,135 @@
               порошковой металлургии и производства технических изделий по ним.
          </div>
     </div>
+    <p id="top"></p>
             <div class="production">
             <h2>Наша продукция</h2>
-            <table class="tab-prod">
-              <tr>
-                <td>
-            <img src="./images/Production1.png" width="368px" height="168px" alt />
-            <img src="./images/Production2.png" width="368px" height="158px" alt />
-            <img src="./images/Production3.png" width="368px" height="261px" alt />
-            <img src="./images/Production4.png" width="755px" height="258px" alt />
-            <img src="./images/Production5.png" width="368px" height="151px" alt />
-                </td>
-             </tr>
-          </table>
+             </div>
+            <div class="tab-prod">
+         <div class="Production1">
+                <a href="#"><img  src="/images/Production1.png"></a>
+              <div class="txt1"><p>Самосмазывающиеся
+                подшипники скольжения</p></div>
+                <a class="butt1" href="@">Подробнее</a></div>
+              <!-- </div> -->
+              <div class="Production2">
+                <a href="#"><img  src="/images/Production2.png"></a>
+                <p>Магнитные  материалы</p>
+                <a class="butt2" href="@">Подробнее</a>
+              </div>
+            <!-- </div> -->
+            <div class="Production3">
+              <div class="image3">
+              <a href="#"><img  src="/images/Production3.png" width="369px" height="261px"></a>
             </div>
+             <div class="prod3"><p>Спеченные 
+                металлические пористые 
+                фильтрэлементы</p>
+                <a class="butt3" href="@">Подробнее</a></div>
+                <div class="innovacii">
+                  Инновации
+                </div>
+              </div>
+                <!-- <div class="butt"><p><Button>Подробнее</Button></p></div> -->
+                <!-- </div> -->
+                <div class="Production4">
+                  <div class="image4">
+                  <a href="#"><img  src="/images/Production4.png"></a>
+                </div>
+                  <div class="prod4"><p>Изделия из конструкционных материалов</p>
+                  <a class="butt4" href="@">Подробнее</a></div>
+                    <div class="razrabotki">
+                      Собственные разработки
+                    </div>
+                </div>
+                <!-- </div> -->
+                <div class="Production5">
+                  <a href="#"><img  src="/images/Production5.png" width ="368px"></a>
+                  <div class="prod5"><p>Инструментальные стали</p>
+                    <a class="butt4" href="@">Подробнее</a></div>
+                </div>
+
+         </div>
              <div class="zakaz">
               <h3>Преимущества</h3>
              </div>
-             <div class="tab-preim">
-               <table class="preim">
-                <tr>
-                  <td>
-                    <img src="./icons/Партии.svg" width="122px" height="89px" alt />
+              <div class="tab-preim">
+                <div class="preim1">
+                <img src="./icons/Партии.svg" width="122px" height="89px" alt />   
+                <p>Принимаем заказы от 1 детали до массового производства</p>
+                </div>
+                  <div class="preim2">
                     <img src="./icons/Размер.svg" width="98px" height="91px" alt />
+                    <p>Вес изделий от 2гр до 2500гр</p>
+                  </div>
+                    <div class="preim3">
                     <img src="./icons/Чертежи.svg" width="137px" height="97px" alt />
+                    <p>Собственный отдел разработок и исследований</p>
+                    </div>
+                      <div class="preim4">
                     <img src="./icons/Материалы.svg" width="175px" height="105px" alt />  
-                  </td>
-                </tr>
-               </table>
+                    <p>Высококачественное сырьего российского и импортного производства</p>
+                      </div>
               </div>
-             </div>
+               </table>
+              <div class="zakazchiki">
+                <h4>Наши заказчики</h4>
+              </div>
+              <div class="slider2">
+                <ul>
+                  <li><a href="#"><img class="img1" src="/images/Slide1.png" width="70px" height="93px" alt=""></a></li>
+                  <li><a href="#"><img class="img2" src="/images/Slide2.png" width="85px" height="91px" alt=""></a></li>
+                  <li><a href="#"><img class="img3" src="/images/Slide3.png" width="1311px" height="46px" alt=""></a></li>
+                  <li><a href="#"><img class="img4" src="/images/Slide4.png" width="89px" height="80px" alt=""></a></li>
+                  <li><a href="#"><img class="img5" src="/images/Slide5.png" width="97px" height="97px" alt=""></a></li>
+                  <li><a href="#"><img class="img6" src="/images/Slide6.png" width="120px" height="26px" alt=""></a></li>
+                  ...
+                </ul>
+              </div>
+              <div class="ending-line">     
+                <div class="ending-logo">
+                  KOMPOZIT
+                  <div tab class="ending-text">
+                  Scientific and production enterprise
+                  </div>
+                  <img class="sprites" src="/images/socials.png" alt="Социальные сети">
+                </div>
+                <div class="num1">
+                  <a class="numb2" href="@">8(800)111-11-11</a>
+                  <div><a class="numb2" href="@">8(800)111-11-11</a></div>
+                            </div>
+                            <div class="num2">
+                              <a class="numb2" href="@">О КОМПАНИИ</a></li>
+                              <!-- <div>О КОМПАНИИ</div> -->
+                             <div><a class="numb2" href="@">ПРОДУКЦИЯ</a></div>
+                                         </div>
+                                         <div class="num3">
+                                          <a class="numb2" href="@">ПОРОШКОВАЯ МЕТАЛЛУРГИЯ</a>
+                                          <div><a class="numb2" href="@">КОНТАКТЫ</a></div>
+                                          <div><a class="conf" href="@">Политика конфиденкциальности</a></div>
+                       </div>
+          </div>
+          
+          </div>
+              <script src="/jquery.min.js"></script>
+              <script src="/bxslider/dist/jquery.bxslider.min.js"></script>
+               
+              <script>
+              $(document).ready(function(){
+                $('.slider2 ul').bxSlider({
+                  pager: false,
+                  controls: true,
+                  auto: false,
+                  pause: 10000,
+                  minSlides: 5,
+                  maxSlides: 5,
+                  slideMargin: 60,   
+                  slideWidth: 75,     
+                });
+              });
+              </script>
   </div>
     
-</div>
+
   </body>
 </html>
-
-
-
-
-
-<!-- <a class="nav-item" href="@">О компании</a>
-            <a class="nav-item" href="@">Продукция</a>
-            <a class="nav-item" href="@">Контакты</a>
-            width: 368px;
-    height: 168px;
-            <a class="nav-item" href="@">8(800)111-11-11</a> -->
